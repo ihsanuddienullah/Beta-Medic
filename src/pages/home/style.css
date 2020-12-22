@@ -1,0 +1,12 @@
+.page-home .text-black {
+  background-image: url('../../assets/images/bg-home.jpg');
+  background-size: cover;
+}
+
+.page-home .h1-responsive {
+  font-size: 110px;
+}
+
+.page-home p {
+  font-size: 50px;
+}

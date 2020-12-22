@@ -1,0 +1,29 @@
+.page-tanyadokter {
+  background-image: url('../../assets/images/bg-tanyadokter.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nama {
+  font-weight: bold;
+  text-align: center;
+}
+
+.spesialis {
+  text-align: center;
+  margin-top: -3%;
+}
+
+.alamat {
+  margin-top: 4px;
+}
+
+.page-tanyadokter h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+}
+
+.page-tanyadokter .card {
+  border-radius: 10px;
+}

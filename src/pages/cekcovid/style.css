@@ -1,0 +1,18 @@
+.pages-cekcovid {
+  background-image: url('../../assets/images/bg-cekcovid.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pages-cekcovid .card {
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.pages-cekcovid h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 20px;
+}

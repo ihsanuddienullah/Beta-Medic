@@ -1,0 +1,20 @@
+.page-register {
+  background-image: url('../../assets/images/bg-login.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.page-register .card {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.page-register form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px;
+}
