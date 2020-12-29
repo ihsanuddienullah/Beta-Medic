@@ -58,5 +58,13 @@ export default function Riwayattes() {
     ],
     rows: riwayatReal,
   };
-  return <MDBDataTableV5 hover data={data} searchTop searchBottom={false} />;
+  return (
+    <MDBDataTableV5
+      responsive
+      hover
+      data={data}
+      searchTop
+      searchBottom={false}
+    />
+  );
 }

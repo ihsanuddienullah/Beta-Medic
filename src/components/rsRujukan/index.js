@@ -1,6 +1,7 @@
 import React from 'react';
 import { MDBDataTableV5, MDBBtn } from 'mdbreact';
 import { Link } from 'react-router-dom';
+import './style.css';
 
 export default function Rsrujukan() {
   // eslint-disable-next-line no-unused-vars
@@ -85,6 +86,12 @@ export default function Rsrujukan() {
   });
 
   return (
-    <MDBDataTableV5 hover data={datatable} searchTop searchBottom={false} />
+    <MDBDataTableV5
+      responsive
+      hover
+      data={datatable}
+      searchTop
+      searchBottom={false}
+    />
   );
 }

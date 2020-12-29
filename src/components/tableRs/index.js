@@ -73,6 +73,7 @@ export default function TableRs() {
   return (
     <>
       <MDBDataTableV5
+        responsive
         hover
         entriesOptions={[5, 20, 25]}
         entries={5}
