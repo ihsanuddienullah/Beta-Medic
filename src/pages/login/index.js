@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBBtn } from 'mdbreact';
+import cookie from 'react-cookie';
 import { setCookie } from '../../utils/cookie';
 import { authService } from '../../services';
 import './style.css';
@@ -11,6 +12,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isLoginLoading, setLoginLoading] = useState(false);
+  const [tryCookie, setTryCookie] = useState(cookie.load('tryCookie'));
   const onSubmitLogin = () => {
     setLoginLoading(true);
     authService
@@ -21,6 +23,7 @@ const Login = () => {
         const cookieEmail = res.email;
         setCookie('userData', JSON.stringify(cookieEmail), 10000);
         setCookie('token', JSON.stringify(cookieToken), 10000);
+        cookie.save('tryCookie', true, { path: '/' });
         window.location.assign('/Beranda');
       })
       .catch((err) => {
